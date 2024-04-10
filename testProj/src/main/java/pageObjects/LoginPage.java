@@ -1,6 +1,7 @@
 package pageObjects;
 
 import com.codeborne.selenide.SelenideElement;
+
 import static com.codeborne.selenide.Selenide.$x;
 
 public class LoginPage {
@@ -14,11 +15,11 @@ public class LoginPage {
     }
 
     public SelenideElement getUsernameField() {
-        return usernameField;
+        return usernameField.shouldBe();
     }
 
     public SelenideElement getPasswordField() {
-        return passwordField;
+        return passwordField.shouldBe();
     }
     public void enter()
     {
